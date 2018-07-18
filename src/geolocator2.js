@@ -29,7 +29,7 @@ class Geolocator2 extends Component{
             lat: position.coords.latitude,
             lng: position.coords.longitude
         });
-        var url = 'http://nominatim.openstreetmap.org/reverse?format=json&lat='+ position.coords.latitude +'&lon=' + position.coords.longitude + '&addressdetails=1';
+        var url = 'https://nominatim.openstreetmap.org/reverse?format=json&lat='+ position.coords.latitude +'&lon=' + position.coords.longitude + '&addressdetails=1';
         var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         //https://github.com/Rob--W/cors-anywhere
         fetch( url)
